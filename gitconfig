@@ -1,0 +1,10 @@
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
+	dt = difftool
+	s = status
+	c = commit
+	out = log --pretty=oneline --abbrev-commit --graph @{u}..
+	in = !git fetch && git log --pretty=oneline --abbrev-commit --graph ..@{u}
+[core]
+	editor = vim
+	autocrlf = true
